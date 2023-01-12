@@ -22,7 +22,7 @@ const Weather = () => {
 
            setData(ActualData.main.temp);
             // setData(ActualData.name);
-
+ 
 
 
         }
