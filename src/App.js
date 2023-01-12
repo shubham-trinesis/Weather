@@ -1,13 +1,21 @@
 import React from "react";
+import './components/Weather.css'
 import Weather from "./components/Weather";
 
 
 const App=()=>{
+  
+    // const sty = {
+    //  display: 'flex',
+    //  float :'center'
+    
+    // }
 
   return(
   
     <>
-          <h1>Weather and Time-zone</h1>
+    
+          <h1 className="header">Weather and Time-zone</h1>
            <Weather />
     </>
     
