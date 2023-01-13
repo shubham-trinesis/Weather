@@ -17,11 +17,12 @@ body{
 .main_inner{
     
    width: 100%;
+  
    background-image: url(/images/weather.jpg);
-    height: 115vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size: 100% 80%;
+    background-size: 100% 100%;
    /* background-color: aqua; */
    /* margin-top: 30px; */
    /* margin: auto; */
@@ -48,11 +49,15 @@ body{
 
 .card{
     width:30%;
-    height: 200px;
-    background-color: darkgray;
+    height:50vh;
+    /* background-color:white; */
     /* background-color: caet; */
     border-radius: 10px;
-    border: 0px solid black;
+    border: 0px solid black; 
+    background-size: cover  ;
+
+  
+   
   
   
     /* display: flex; */
@@ -64,6 +69,12 @@ body{
    
    
 } 
+img{
+    width: 100%;
+    height: 100vh;;
+    
+}
+
 .card_content{
     list-style: none;
 }

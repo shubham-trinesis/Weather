@@ -3,6 +3,7 @@ import './components/Weather.css'
 import Weather from "./components/Weather";
 
 
+
 const App=()=>{
   
     // const sty = {
@@ -17,9 +18,15 @@ const App=()=>{
     
           <h1 className="header">Weather and Time-zone</h1>
            <Weather />
+          
+           
+
     </>
     
   )
 
 }
-export default App
+
+
+export default App;
+
