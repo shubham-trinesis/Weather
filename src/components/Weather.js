@@ -4,6 +4,11 @@ import './Weather.css'
 const Weather = () => {
 
     const [data, setData] = useState("pune");
+    // const [data, setData] = useState({main:[],sys:[]});
+
+    // const len=data.length;
+    const bydefault="pune"
+   
 
  
 
@@ -32,6 +37,8 @@ const Weather = () => {
 
 
              setData(ActualData.main.temp);
+            //  setData(ActualData);
+
 
 
 
@@ -74,7 +81,9 @@ const Weather = () => {
 
 
                     <div className="search-section">
-                        <input type="search" placeholder="enter your city name" className="input-field" onChange={(event) => { setSearch(event.target.value) }}></input>
+                        <input type="search" placeholder="enter your city name" className="input-field" onChange={(event) => { setSearch(event.target.value || bydefault) 
+                            
+                        }}></input>
 
                     </div>
 
@@ -86,9 +95,11 @@ const Weather = () => {
                             <li className=" list-items">
 
                                 <div className="card__inner1">
-                                    <p className="card__day">{search}</p>
+                                    <p className="card__day">{search || bydefault}</p>
                                     <hr></hr>
-                                    <p>{data}</p>
+                                    {/* <p>{data.main.temp }</p> */}
+                                    <p>{data }</p>
+
                                    
                                 </div>
                                 <br></br>
